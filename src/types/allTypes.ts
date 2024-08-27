@@ -1,3 +1,4 @@
+import { JSX } from "react";
 export type MatrixType = {
     image: string;
     price: string;
@@ -18,6 +19,7 @@ export type HeroListType = {
 }
 export type HeadingType = {
     headingName: string;
+    heading?: string;
 }
 export type ProductCardType = {
     image: string;
@@ -31,4 +33,8 @@ export type ButtonProp= React.HTMLAttributes<HTMLDivElement> &{
 }
 export type SaleTagProp= React.HTMLAttributes<HTMLDivElement> &{
     text: string;
+}
+export type CategoriesIconsType = {
+    name: string;
+    icon: JSX.Element;
 }

@@ -4,10 +4,7 @@ import { MyTimer } from "./timer";
 export default function FreshSale() {
   return (
     <div>
-      <div className="flex items-center gap-2">
-        <img src="./headingImage.png" alt="" />
-        <Heading headingName="Today's" />
-      </div>
+        <Heading headingName="Today's" heading="" />
       <div className="flex gap-10 items-center">
         <h1 className="text-[36px] font-bold">Fresh Sales</h1>
         <div className="pb-3">
