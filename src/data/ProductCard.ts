@@ -8,7 +8,7 @@ export const ProductCardData: ProductCardType[] = [
         sale: "-20%"
     },
     {
-        image:"./productCards/monitor.png",
+        image:"./productCards/speaker.png",
         description:"IPS LCD Gaming Monitor",
         price:"$199.00",
         prePrice:"$250.00",
@@ -22,7 +22,7 @@ export const ProductCardData: ProductCardType[] = [
         sale: "-20%"
     },
     {
-        image:"./productCards/monitor.png",
+        image:"./productCards/speaker.png",
         description:"IPS LCD Gaming Monitor",
         price:"$199.00",
         prePrice:"$250.00",
@@ -36,7 +36,7 @@ export const ProductCardData: ProductCardType[] = [
         sale: "-20%"
     },
     {
-        image:"./productCards/monitor.png",
+        image:"./productCards/speaker.png",
         description:"IPS LCD Gaming Monitor",
         price:"$199.00",
         prePrice:"$250.00",

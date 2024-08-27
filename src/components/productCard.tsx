@@ -36,7 +36,7 @@ export function ProductCard() {
             }}
             className="w-[90%] flex flex-col justify-center items-center"
           >
-            <CarouselContent className="relative">
+            <CarouselContent className="relative pt-7">
               {ProductCardData.map((card: ProductCardType) => (
                 <CarouselItem
                   key={nanoid()}
@@ -80,8 +80,8 @@ export function ProductCard() {
             </CarouselContent>
 
             <div className="flex mt-7 mr-10 gap-8">
-              <CarouselPrevious className="md:ml-2" />
-              <CarouselNext className="md:mr-2" />
+              <CarouselPrevious className="" />
+              <CarouselNext className="" />
             </div>
           </Carousel>
         </div>
