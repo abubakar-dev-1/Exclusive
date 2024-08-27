@@ -13,3 +13,22 @@ export type ServiceType = {
     name: string;
     description: string;
 }
+export type HeroListType = {
+    listName: string;
+}
+export type HeadingType = {
+    headingName: string;
+}
+export type ProductCardType = {
+    image: string;
+    description: string;
+    price: string;
+    prePrice: string;
+    sale:string;
+}
+export type ButtonProp= React.HTMLAttributes<HTMLDivElement> &{
+    text: string;
+}
+export type SaleTagProp= React.HTMLAttributes<HTMLDivElement> &{
+    text: string;
+}

@@ -6,7 +6,7 @@ export default function AboutOwner() {
     <div className="flex justify-center gap-6 mt-24">
       {OwnerData.map((owner: OwnerType) => {
         return (
-          <div className="flex flex-col gap-2 items-start w-[370px] h-[564px] py-6">
+          <div className="flex flex-col gap-2 items-start w-[370px] py-6">
             <img src={owner.image} alt="" />
             <p className="font-bold text-[30px]">{owner.name}</p>
             <p>{owner.description}</p>
