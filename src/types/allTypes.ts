@@ -17,7 +17,7 @@ export type ServiceType = {
 export type HeroListType = {
     listName: string;
 }
-export type HeadingType = {
+export type HeadingType = React.HTMLAttributes<HTMLDivElement> &{
     headingName: string;
     heading?: string;
 }
