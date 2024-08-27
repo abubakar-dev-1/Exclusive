@@ -1,11 +1,11 @@
 import React from 'react';
-import { SendHorizontal } from 'lucide-react';
+import { SendHorizontal , FacebookIcon , InstagramIcon ,LinkedinIcon ,TwitterIcon } from 'lucide-react';
 
 export default function Footer() {
   return (
     <>
-      <div className='bg-black text-white p-10 flex justify-between '>
-        <div className='text-[24px] font-light space-y-5'>
+      <div className='bg-black text-white gap-[60px] p-10 flex justify-between '>
+        <div className='text-[24px] font-light space-y-5 w-[18%]'>
           <p className='font-[700]'>Exclusive</p>
           <p className='text-[20px]'>Subscribe</p>
           <p className='text-[16px]'>Get 10% off your first order</p>
@@ -20,26 +20,39 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='text-[16px] font-light space-y-5'>
-            <p className='font-normal'>Support</p>
+        <div className='text-[16px] font-light space-y-5 w-[40%] '>
+            <p className='font-normal text-[20px]'>Support</p>
             <p>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
             <p>exclusive@gmail.com</p>
             <p>+88015-88888-9999</p>
         </div>
 
-        <div className='text-[16px] font-light space-y-5'>
-            <p className='font-normal'>Account</p>
+        <div className='text-[16px] font-light space-y-5 w-[25%]'>
+            <p className='font-normal text-[20px]'>Account</p>
             <p>My Account</p>
             <p>Login / Register</p>
             <p>Cart</p>
             <p>Wishlist</p>
             <p>Shop</p>
         </div>
-        <div className='text-[16px] font-light space-y-5'>
-            <p className='font-normal'>Support</p>
-            <p>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
-            <p>exclusive@gmail.com</p>
-            <p>+88015-88888-9999</p>
+        <div className='text-[16px] font-light space-y-5 w-[30%]'>
+            <p className='font-normal text-[20px]'>Quick Link</p>
+            <p>Privacy Policy</p>
+            <p>Terms Of Use</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+        </div>
+        <div className='text-[16px] font-light space-y-5 w-[40%]'>
+            <p className='font-normal text-[20px]'>Download App</p>
+            <p>Save $3 with App New User Only</p>
+            <img src="/Frame.png" alt="" />
+
+            <div className='flex gap-[24px]'>
+                <LinkedinIcon/>
+                <FacebookIcon/>
+                <TwitterIcon/>
+                <LinkedinIcon/>
+            </div>
         </div>
       </div>
     </>
