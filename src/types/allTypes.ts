@@ -38,3 +38,9 @@ export type CategoriesIconsType = {
     name: string;
     icon: JSX.Element;
 }
+export type ProductDetailType = {
+    image: string[];
+    name: string;
+    price:string;
+    detail: string;
+}

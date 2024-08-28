@@ -3,7 +3,7 @@ import { ProductCardData } from "@/data/ProductCard";
 import { ProductCardType } from "@/types/allTypes";
 import Heading from "@/components/heading";
 import SaleTag from "@/components/saleTag";
-export default function WishListForYou() {
+export default function ForYouCards() {
   const itemCount = ProductCardData.length;
 
   return (
