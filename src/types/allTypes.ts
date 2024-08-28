@@ -17,7 +17,7 @@ export type ServiceType = {
 export type HeroListType = {
     listName: string;
 }
-export type HeadingType = {
+export type HeadingType = React.HTMLAttributes<HTMLDivElement> &{
     headingName: string;
     heading?: string;
 }
@@ -37,4 +37,10 @@ export type SaleTagProp= React.HTMLAttributes<HTMLDivElement> &{
 export type CategoriesIconsType = {
     name: string;
     icon: JSX.Element;
+}
+export type ProductDetailType = {
+    image: string[];
+    name: string;
+    price:string;
+    detail: string;
 }
