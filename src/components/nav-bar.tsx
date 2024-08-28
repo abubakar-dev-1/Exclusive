@@ -1,5 +1,10 @@
 import React from "react";
-import { Heart, ShoppingCart, Search } from "lucide-react";
+import { Heart, ShoppingCart, Search,UserRound } from "lucide-react";
+import Link from "next/link";
+import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenuDemo } from "./user-dropdown";
+
+
 
 export default function NavBar() {
   return (
@@ -13,11 +18,11 @@ export default function NavBar() {
         </div>
         <div className="flex justify-between px-10 py-5 items-center">
           <div className="text-[24px] font-[700]">Exclusive</div>
-          <ul className="flex gap-[48px] text-[16px]">
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
-            <li>Sign Up</li>
+          <ul className="flex gap-[48px] text-[16px] cursor-pointer">
+            <Link href="/"> <li>Home</li></Link>
+            <Link href="/contactUs"> <li>Contact</li></Link>
+            <Link href="/about"><li>About</li></Link>
+            <Link href="/signup"> <li>Sign Up</li></Link>
           </ul>
 
           <div className="flex gap-[24px] align-middle items-center">
@@ -30,8 +35,9 @@ export default function NavBar() {
               />
               <Search className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black" />
             </div>
-            <Heart />
-            <ShoppingCart />
+            <Link href="/"> <Heart className="hover:bg-[#db4444] rounded-3xl hover:p-[0.19rem] hover:text-white"/> </Link>
+            <Link href="/cart"> <ShoppingCart className="hover:bg-[#db4444] hover:rounded-3xl hover:p-[0.19rem] hover:text-white"/> </Link>
+            <DropdownMenuDemo/>
           </div>
         </div>
       </div>

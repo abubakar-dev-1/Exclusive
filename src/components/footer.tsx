@@ -1,6 +1,6 @@
 import React from 'react';
 import { SendHorizontal , FacebookIcon , InstagramIcon ,LinkedinIcon ,TwitterIcon } from 'lucide-react';
-
+import Link from 'next/link';
 export default function Footer() {
   return (
     <>
@@ -30,8 +30,11 @@ export default function Footer() {
         <div className='text-[16px] font-light space-y-5 w-[25%]'>
             <p className='font-normal text-[20px]'>Account</p>
             <p>My Account</p>
-            <p>Login / Register</p>
-            <p>Cart</p>
+            <div>
+               <span> <Link href="/login"> Login </Link></span> / <span> <Link href="/signup"> Register </Link></span> 
+              
+            </div>
+            <p> <Link href="/cart"> Cart </Link></p>
             <p>Wishlist</p>
             <p>Shop</p>
         </div>
@@ -40,7 +43,7 @@ export default function Footer() {
             <p>Privacy Policy</p>
             <p>Terms Of Use</p>
             <p>FAQ</p>
-            <p>Contact</p>
+            <p><Link href="/contactUs"> Contact</Link></p>
         </div>
         <div className='text-[16px] font-light space-y-5 w-[40%]'>
             <p className='font-normal text-[20px]'>Download App</p>

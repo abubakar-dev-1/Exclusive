@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./globals.css"; // Make sure this imports your global styles including the new rule
 import NavBar from "@/components/nav-bar";
 import Footer from "@/components/footer";
 
@@ -18,12 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <body className={`${inter.className} max-w-[1440px] w-full text-black px-7`}>
-        
-        <NavBar/>
+      <body className={`${inter.className} max-w-[1440px] w-full text-black px-7`}>
+        <NavBar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
