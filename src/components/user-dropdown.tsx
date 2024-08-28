@@ -50,7 +50,7 @@ export function DropdownMenuDemo() {
           <DropdownMenuGroup>
             <DropdownMenuItem>
               <User className="mr-2 h-6 w-6" />
-              <span>Manage My Account</span>
+              <span> <Link href="/user"> Manage My Account </Link></span>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <ShoppingBag className="mr-2 h-6 w-6" />

@@ -35,7 +35,7 @@ export default function NavBar() {
               />
               <Search className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black" />
             </div>
-            <Link href="/"> <Heart className="hover:bg-[#db4444] rounded-3xl hover:p-[0.19rem] hover:text-white"/> </Link>
+            <Link href="/wishList"> <Heart className="hover:bg-[#db4444] rounded-3xl hover:p-[0.19rem] hover:text-white"/> </Link>
             <Link href="/cart"> <ShoppingCart className="hover:bg-[#db4444] hover:rounded-3xl hover:p-[0.19rem] hover:text-white"/> </Link>
             <DropdownMenuDemo/>
           </div>

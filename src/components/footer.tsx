@@ -29,13 +29,13 @@ export default function Footer() {
 
         <div className='text-[16px] font-light space-y-5 w-[25%]'>
             <p className='font-normal text-[20px]'>Account</p>
-            <p>My Account</p>
+            <p> <Link href="/user"> My Account </Link></p>
             <div>
                <span> <Link href="/login"> Login </Link></span> / <span> <Link href="/signup"> Register </Link></span> 
               
             </div>
             <p> <Link href="/cart"> Cart </Link></p>
-            <p>Wishlist</p>
+            <p> <Link href="/wishList"> WishList </Link></p>
             <p>Shop</p>
         </div>
         <div className='text-[16px] font-light space-y-5 w-[30%]'>
